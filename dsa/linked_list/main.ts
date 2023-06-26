@@ -47,7 +47,8 @@ class LinkedList<T> implements List<T> {
 
   insertAt(index: number, value: T) {
     if (index < 0 || index > this.length) {
-      return console.log('Invalid index')
+      console.log('Invalid index')
+      return
     }
 
     const node = new ListNode(value)
@@ -70,7 +71,8 @@ class LinkedList<T> implements List<T> {
 
   deleteAt(index: number) {
     if (index < 0 || index > this.length) {
-      return console.log('Invalid index')
+      console.log('Invalid index')
+      return
     }
 
     if (this.length === 0) {
